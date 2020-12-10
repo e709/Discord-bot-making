@@ -1,0 +1,12 @@
+Observation:
+If you are following me, you must have noticed that if you click !help by default you will get a command where the bot displays all what it can do. But if you want to create
+your own help command look at the following code:
+
+Code:
+@client.remove_command('help')#This will remove the help command
+
+@client.command(name='help')
+async def on_help():
+    await ctx.send('help show this /n!ping says pong /n !pong') #and so on
+    
+    client.run('Your token here')
